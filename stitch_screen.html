@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en"><head></head><body class="overflow-x-hidden">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MedoraQub | Clinical Curator of Healthcare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#6e7975",
+                        "primary-container": "#006d5b",
+                        "on-tertiary-fixed-variant": "#743425",
+                        "surface-dim": "#d7dbd8",
+                        "surface-container-low": "#f1f4f1",
+                        "on-error-container": "#93000a",
+                        "primary": "#005344",
+                        "inverse-primary": "#81d6c0",
+                        "secondary-fixed-dim": "#adcec3",
+                        "primary-fixed-dim": "#81d6c0",
+                        "on-tertiary-fixed": "#3b0902",
+                        "secondary-fixed": "#c8eade",
+                        "tertiary-container": "#934c3c",
+                        "surface-variant": "#e0e3e0",
+                        "surface-container-highest": "#e0e3e0",
+                        "on-tertiary-container": "#ffd1c7",
+                        "surface-bright": "#f7faf7",
+                        "secondary": "#46645c",
+                        "tertiary-fixed-dim": "#ffb4a4",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7faf7",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#181c1b",
+                        "on-primary-container": "#96ebd5",
+                        "inverse-surface": "#2d3130",
+                        "on-error": "#ffffff",
+                        "tertiary": "#763527",
+                        "tertiary-fixed": "#ffdad3",
+                        "surface-container-high": "#e5e9e6",
+                        "surface": "#f7faf7",
+                        "on-background": "#181c1b",
+                        "inverse-on-surface": "#eef2ee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#3e4945",
+                        "on-primary-fixed-variant": "#005143",
+                        "secondary-container": "#c8eade",
+                        "surface-tint": "#006b59",
+                        "on-primary-fixed": "#00201a",
+                        "primary-fixed": "#9df3dc",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ebefec",
+                        "on-secondary-fixed": "#01201a",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#4c6a62",
+                        "on-secondary-fixed-variant": "#2e4c44",
+                        "outline-variant": "#bec9c4"
+                    },
+                    fontFamily: {
+                        "headline": ["Nunito Sans", "sans-serif"],
+                        "body": ["Poppins", "sans-serif"],
+                        "label": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1rem", "2xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-body bg-[#f7faf7] text-[#181c1b];
+            }
+            h1, h2, h3, h4, h5, h6 {
+                @apply font-headline;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+<header class="top-0 sticky z-50 bg-[#ffffff]/70 backdrop-blur-md shadow-[0px_12px_32px_rgba(0,83,68,0.06)]">
+<div class="flex flex-col w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center justify-between gap-8">
+<div class="text-2xl font-black tracking-tighter text-[#005344] font-headline" style="">MedoraQub</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-[#005344] border-b-2 border-[#005344] pb-1 font-bold font-headline text-sm tracking-tight" href="#" style="">Home</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Shop</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Doctors</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Brands</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Lab</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Baby Care</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm scale-95 active:scale-90 transition-transform font-headline" style="">Search Now</button>
+<div class="flex gap-4 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-low p-2 rounded-lg transition-all" data-icon="person" style="">person</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-low p-2 rounded-lg transition-all" data-icon="shopping_cart" style="">shopping_cart</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="relative flex flex-col overflow-hidden pt-32" style='background-image: linear-gradient(rgba(247, 250, 247, 0.6) 0%, rgba(247, 250, 247, 0.6) 60%, rgb(247, 250, 247) 100%), url("https://lh3.googleusercontent.com/aida/ADBb0ujB3K14vKS0XxuAQYH-xX3LRn-wOP1ll9zPcU7HDtayrM2tGfTuRByz6TbBZT5z-z3AS0y7PwlwODY42l7UXZCP87sOnkjPK1_Tt_po-K9B0WI-g_VgyrS1iv-XOxjm5HYGBzHFy2yNJeEJFZYS3nZkB6g6hy-WPm4j5NvHTZ7RD-OuSOa0xpHyDtGV_LMN17Sd_nbe_hssG3ona0GmPhPFRGQpNATqs47Jowi6bb3Le5JCWGBs_esDaVjG14YyWmyDLvTC2zPf"); background-size: cover; background-position: center center; background-repeat: no-repeat;'>
+<div class="max-w-screen-2xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10 text-center lg:text-left">
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-bold text-xs mb-6 font-label" style="">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="bolt" style="">bolt</span> INSTANT PHARMACY
+                </div>
+<h1 class="text-5xl md:text-7xl font-black text-primary mb-6 tracking-tighter leading-tight font-headline" style="">
+                    INSTANT CARE <br/>DELIVERED
+                </h1>
+<p class="text-xl text-secondary mb-10 max-w-lg mx-auto lg:mx-0 font-body" style="">
+                    Get medicines at your doorstep in just 20 minutes. Healthcare that moves at the speed of your life.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<div class="relative flex-grow max-w-md">
+<input class="w-full bg-white/80 backdrop-blur shadow-sm border-none focus:ring-2 focus:ring-primary h-14 px-6 rounded-full font-body" placeholder="Enter your email" type="email"/>
+<button class="absolute right-2 top-2 bg-primary text-white px-6 py-2 rounded-full h-10 font-bold hover:bg-primary-container transition-colors font-headline" style="">Notify Me</button>
+</div>
+</div>
+<p class="text-xs text-outline mt-4 font-medium italic font-body" style="">Available in select cities. Coming soon to yours.</p>
+</div>
+<div class="relative flex justify-center">
+<div class="absolute inset-0 bg-primary-fixed/20 rounded-full blur-[120px] -z-10"></div>
+<img alt="Telemedicine illustration" class="w-full max-w-xl h-auto rounded-2xl" src="https://lh3.googleusercontent.com/aida/ADBb0uiNTe6n7ukv7QRGh5_P6WDKIFcqD10fhRqScZw9xiUNrbaZj7fj3g105oSc69CbGzziQ0_pSHnPrpyUk1Lq_kEYITncL4g8coYzcEpgUEFeyEJVomXIpcPls-hWFn7ZMk9nEHKRt-DAM-tKbk-I-p9upm1f7myAtWnSaK14xacJUk0kWzNZ8dloQ3HkRses8U8FWvVDVmNGsmdxpDQNys3J261zosv3NttNJe_6J-VCBMQVSyLo08psgGN_JHHzf2xcN-q7KU4c" style=""/>
+</div>
+</div>
+<!-- Integrated Search Section -->
+<div class="max-w-screen-xl mx-auto px-6 w-full flex flex-col items-center gap-8 relative z-10 pt-16">
+<div class="w-full lg:w-[60%] relative">
+<div class="relative flex items-center bg-white rounded-xl shadow-lg border border-outline-variant/30 overflow-hidden">
+<span class="absolute left-4 material-symbols-outlined text-on-surface" data-icon="search" style="">search</span>
+<input class="w-full bg-transparent border-none h-14 pl-12 pr-28 text-base font-medium focus:ring-0 font-body" placeholder="which medicine do you want?" type="text"/>
+<button class="absolute right-2 bg-[#005344] text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-primary-container transition-all font-headline" style="">
+                        Search
+                    </button>
+</div>
+</div>
+<div class="w-full lg:w-[30%]">
+<button class="w-full flex items-center justify-center gap-2 bg-white text-[#006d5b] border-2 border-[#006d5b] h-12 px-6 rounded-lg font-bold hover:bg-surface-container-low transition-all text-sm shadow-md font-headline" style="">
+<span class="material-symbols-outlined text-xl" data-icon="upload" style="">upload</span> 
+                    Upload Prescription
+                </button>
+</div>
+<div class="flex justify-center mt-4 mb-12">
+<button class="bg-[#006d5b] text-white px-10 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-lg font-headline" style="">
+                    Shop by Category
+                </button>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface">
+<div class="max-w-screen-xl mx-auto px-12 md:px-24">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-black text-primary mb-2 font-headline" style="">Health Categories</h2>
+<p class="text-secondary font-medium font-body" style="">Curated care for every need</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all font-headline" style="">View All <span class="material-symbols-outlined" style="">chevron_right</span></button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6">
+<!-- Card 1 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="dentistry" style="">dentistry</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Oral Care</h3>
+</div>
+<!-- Card 2 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="cardiology" style="">cardiology</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Cardiac Care</h3>
+</div>
+<!-- Card 3 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="healing" style="">healing</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Relief Pain</h3>
+</div>
+<!-- Card 4 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="spa" style="">spa</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Skin Care</h3>
+</div>
+<!-- Card 5 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="elderly" style="">elderly</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Elderly Care</h3>
+</div>
+<!-- Card 6 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="pets" style="">pets</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Pet Care</h3>
+</div>
+<!-- Card 7 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="pregnant_woman" style="">pregnant_woman</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Pregnancy Care</h3>
+</div>
+<!-- Card 8 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="favorite" style="">favorite</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Sexual Health</h3>
+</div>
+<!-- Card 9 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="monitor_heart" style="">monitor_heart</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Diabetes Care</h3>
+</div>
+<!-- Card 10 -->
+<div class="bg-[#006D5B] px-3 py-6 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-16 bg-white rounded-xl flex items-center justify-center text-[#006D5B] mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="medical_services" style="">medical_services</span>
+</div>
+<h3 class="font-bold text-xs text-white font-headline" style="">Menstrual Kit</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-32 overflow-hidden relative bg-[#006D5B]">
+<div class="max-w-screen-2xl mx-auto px-6 relative">
+<h2 class="text-4xl font-black mb-24 text-center font-headline uppercase tracking-tight text-white" style="">How It Works</h2>
+<!-- SVG Path Container -->
+<div class="absolute inset-0 pointer-events-none z-0 hidden lg:block overflow-visible">
+<svg class="w-full h-full" fill="none" preserveaspectratio="xMidYMid meet" viewbox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+<path d="M150,210 C300,210 300,340 450,340 C600,340 600,210 750,210 C900,210 900,340 1050,340 C1150,340 1150,550 900,600 C750,650 650,750 600,750 C550,750 450,750 300,750" fill="none" stroke="#ffffff" stroke-dasharray="12 12" stroke-opacity="0.3" stroke-width="4"></path>
+</svg>
+</div>
+<div class="relative z-10">
+<!-- Top Row: Steps 1-4 -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative mb-10">
+<div class="w-56 h-56 bg-white rounded-full shadow-2xl border-4 border-surface-container flex items-center justify-center group-hover:border-primary transition-all duration-500 overflow-hidden ring-8 ring-white/50">
+<img alt="Consult a Doctor" class="w-full h-full object-contain p-4 opacity-90 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/ADBb0uiZ8q7x8Pd8pZxr4wKhn8NddwouvDcNe37TDXX8zi4UTROdQZG6eFmjUJKvclRglrS2CzdWnxcZ1hp_0cj0uJmkTZjSI-sAcWPyLO3F62O_Au9ZUZYhUAWbumQrYzSwFwoTgxn2jWd_8mgce4jVtcVsovMQi0bAIH0esXSF1GlCDB6FI4R5YoogXHQx41mQ6hF3MxTjhwKHEU9qUTGS6nlkwzkOFBeHXB0G0gZ0u89nML3gwvCHkhZmVytnIOrka1SY5c5iQk9l" style=""/>
+</div>
+<div class="absolute -top-3 -right-3 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-black shadow-lg border-4 border-white" style="">1</div>
+</div>
+<h3 class="text-2xl font-bold mb-3 font-headline text-white" style="">Consult a Doctor</h3>
+<p class="text-base max-w-[280px] font-body leading-relaxed text-white" style="">Book instant online consultations with top specialists within minutes.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group mt-12 lg:mt-32">
+<div class="relative mb-10">
+<div class="w-56 h-56 bg-white rounded-full shadow-2xl border-4 border-surface-container flex items-center justify-center group-hover:border-primary transition-all duration-500 overflow-hidden ring-8 ring-white/50">
+<img alt="Get a CheckUp" class="w-full h-full object-contain p-4 opacity-90 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/ADBb0ujIM1uiCNqr9UrmzfEqC3aNzdywWYdSLF9SfKDw_EDcpZ0QmYByRKOCnWbwNAFE6phwheYGjsGm4iGtP26BFEIj3Lte0_FXlW4HookYZK3HSroHAYW8wlhRu4De5V3Hxq644_2cjWb4eY0j6BM3HpO4IudmJmyOJeEz2upTvwwB8uJDYiUJ97-ru93V9iDjlZVAIV5XPGA177RAIqBtzbocTb8kJ72BZj8v1jvqab5Fg98CCyJ4cS9VcUH8m967Flk7t9f73OywEA" style=""/>
+</div>
+<div class="absolute -top-3 -right-3 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-black shadow-lg border-4 border-white" style="">2</div>
+</div>
+<h3 class="text-2xl font-bold mb-3 font-headline text-white" style="">Get a CheckUp</h3>
+<p class="text-base max-w-[280px] font-body leading-relaxed text-white" style="">Schedule comprehensive health checkups from your home convenience.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative mb-10">
+<div class="w-56 h-56 bg-white rounded-full shadow-2xl border-4 border-surface-container flex items-center justify-center group-hover:border-primary transition-all duration-500 overflow-hidden ring-8 ring-white/50">
+<img alt="Order Medicine" class="w-full h-full object-contain p-4 opacity-90 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/ADBb0uhM0YhexTKw6978yH5rj5i1iR9OFZGtmAHoglIdXez-HhTgNQga-LWf431KeSm_XoGcS8Ft06S8-oTb4YR5ERjaFB8RUhyPOBAXRtRmbVUGhffUtpEGK0SfzF0NJlfQ1xTZE_bPDrbBy2-iH3NXC5EOqLeEhnQ58_cEdIr3f7mOv9UTHVs6Bg2H3SMPzcwJw9x5AURHyZlCimAKydBjJP2R0WbFDOlvc-IEUJI5_1hDUlAUuEBNhbsAWblTdyi_cbnoZA6mtksKXA" style=""/>
+</div>
+<div class="absolute -top-3 -right-3 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-black shadow-lg border-4 border-white" style="">3</div>
+</div>
+<h3 class="text-2xl font-bold mb-3 font-headline text-white" style="">Order Medicine</h3>
+<p class="text-base max-w-[280px] font-body leading-relaxed text-white" style="">Browse thousands of medicines and health products with clinical precision.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group mt-12 lg:mt-32">
+<div class="relative mb-10">
+<div class="w-56 h-56 bg-white rounded-full shadow-2xl border-4 border-surface-container flex items-center justify-center group-hover:border-primary transition-all duration-500 overflow-hidden ring-8 ring-white/50">
+<img alt="Fast Delivery" class="w-full h-full object-contain p-4 opacity-90 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/ADBb0uiaW7x9lZWE3XYbERCQyl4jc-Qcjb1kyM9do5pcS7RzS9nLWIzqvnu7SJ1EsHqW2MDTbUJRbvu6N5HJaeX8YnyzVDXsdFqKOLhxTVzYxjy-bClx7NhcUWFOxYQAQPCqQdeyg88VqsgwSZXs1wwlZx35JIE7JF72mo8iytugS-GEEgrbx4XSeO93it1uOha9-hy7cD5H74TlF61Qy10mNVeR833WBrjyHMynMv8N44Ua6sUacZ4QreCxUfPPS5qLJmqT4EzcB3nM_g" style=""/>
+</div>
+<div class="absolute -top-3 -right-3 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-black shadow-lg border-4 border-white" style="">4</div>
+</div>
+<h3 class="text-2xl font-bold mb-3 font-headline text-white" style="">Fast Delivery</h3>
+<p class="text-base max-w-[280px] font-body leading-relaxed text-white" style="">Hyper-local system ensures doorstep delivery in as fast as 10-20 minutes.</p>
+</div>
+</div>
+<!-- Bottom Row: Steps 5-6 -->
+<div class="flex flex-col md:flex-row justify-center lg:gap-40 gap-8">
+<!-- Step 5: Seva AI -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative mb-10">
+<div class="w-56 h-56 bg-white rounded-full shadow-2xl border-4 border-surface-container flex items-center justify-center group-hover:border-primary transition-all duration-500 overflow-hidden ring-8 ring-white/50">
+<img alt="Seva AI" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/ADBb0uj9VNrrV_F1LGItzP0qXeRt2c2YDntx5596yfODq32AdsGdz77rYCarKuJROOzn3-dxn7cQAAA5taUu9qLD4KTUi_hKgiSwQQMg7-wUPPfwZ20cWpu9WPfo0iGtrTboTK7XME8rDLukkIQht3SeDqLoTs9rJiMKCcVTVnVgC-WYWqoyGalUAyPc-991dLFRKwxDtMfukBPZBCqGjkDAiwsZVOAUhpViHTCWL813TVnY0HoxLMK5PQmvT3pnQtERPhqVMjoZwqzMHw" style=""/>
+</div>
+<div class="absolute -top-3 -right-3 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-black shadow-lg border-4 border-white" style="">5</div>
+</div>
+<h3 class="text-2xl font-bold mb-3 font-headline text-white" style="">Seva AI</h3>
+<p class="text-base max-w-[280px] font-body leading-relaxed text-white" style="">AI-powered health companion available 24/7 for your medical queries.</p>
+</div>
+<!-- Step 6: Home Care -->
+<div class="flex flex-col items-center text-center group">
+<div class="relative mb-10">
+<div class="w-56 h-56 bg-white rounded-full shadow-2xl border-4 border-surface-container flex items-center justify-center group-hover:border-primary transition-all duration-500 overflow-hidden ring-8 ring-white/50">
+<img alt="Home Care" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity scale-125 object-contain p-4" src="https://lh3.googleusercontent.com/aida/ADBb0uhIssdS3wSM285_CrTyepf6ntD2d1vPKguAgilInFfr8mzw0RQW5F6PtLv1auO8maCAGlbW66B19Lm9NzXOISBPBPJNwBP3AqFErmMeZjpwYsR-INVCfqjWWmWwuB6FMDx4wGMFy1iA68TNezBwpFNgHoTpc2M5Da7menoZk0mY1J35ehIQuCv_AzIpxV12D1AvYz-4Hg5HhPAwzeFJNA7ppGy65WcRnIANiAvyaEnM-F0auUkyj30l7U_uIiF7D8lNkSaA3yLnpQ" style=""/>
+</div>
+<div class="absolute -top-3 -right-3 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-black shadow-lg border-4 border-white" style="">6</div>
+</div>
+<h3 class="text-2xl font-bold mb-3 font-headline text-white" style="">Home Care</h3>
+<p class="text-base max-w-[280px] font-body leading-relaxed text-white" style="">Professional nursing and physiotherapy provided at your doorstep.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7 lg:pl-8">
+<h2 class="text-4xl md:text-6xl font-black text-primary mb-6 tracking-tight leading-tight uppercase font-headline" style="">
+                    TALK TO CERTIFIED <span class="text-secondary opacity-80" style="">DOCTORS</span> <span class="text-secondary lowercase font-medium text-3xl md:text-4xl" style="">anytime</span>
+</h2>
+<p class="text-xl text-secondary mb-10 max-w-xl leading-relaxed font-body" style="">
+                    Get video consultations from top specialists within minutes. High-quality care is just a tap away. Join the waitlist today.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-primary-container transition-all shadow-lg active:scale-95 font-headline" style="">Notify Me</button>
+<button class="border-2 border-primary text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-container-low transition-all active:scale-95 font-headline" style="">Learn More</button>
+</div>
+</div>
+<div class="relative flex justify-center lg:justify-end lg:col-span-5">
+<div class="absolute inset-0 bg-[#006D5B]/5 rounded-full blur-[100px] -z-10 translate-x-12 translate-y-12"></div>
+<div class="relative w-full max-w-2xl">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-[90%] aspect-square bg-primary-container rounded-full -z-10 opacity-10 lg:opacity-20"></div>
+<img alt="Doctor consultation" class="w-full h-auto rounded-2xl object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiwmuyg7Cy2v2j2sZb5u2ON-qFTY2vjWwlpVz93VFdsZ638z8yzS2UJewwWageY6nFwBT3ETEnEz-Y6l6cAUtYQw7Mk-dtkOnWJDPeEgUU8IDDDPyT0dACz8RZz6oiZWss9sCyOSuUpJN6lAM71sTQyodUPwt5saXyIruT45Q0tnAv8_9okCkaQzOdNN_X4_jRZEK9Q5DknYTE8q1ozy5uwM8mHDAWiGjs_mviwJ0WQLN-yczBlLUenh_sEBpSYlLtZLE4GamK8PA" style=""/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface">
+<div class="max-w-screen-xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black text-primary mb-4 tracking-tight font-headline" style="">CHOOSE YOUR PLAN</h2>
+<p class="text-secondary max-w-2xl mx-auto font-body" style="">Unlock premium healthcare benefits and prioritized deliveries with our subscription tiers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/15 flex flex-col">
+<h3 class="text-xl font-bold text-on-surface mb-2 font-headline" style="">Free</h3>
+<div class="flex items-baseline mb-8">
+<span class="text-4xl font-black text-primary font-headline" style="">₹0</span>
+<span class="text-outline ml-2 font-body" style="">/month</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow font-body">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> Standard Delivery
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> 24/7 Support
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> Prescription Storage
+                        </li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-surface-container-low transition-all font-headline" style="">Current Plan</button>
+</div>
+<div class="bg-primary-container p-10 rounded-2xl shadow-xl flex flex-col relative overflow-hidden transform md:scale-105">
+<div class="absolute top-4 right-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest font-label" style="">Most Popular</div>
+<h3 class="text-xl font-bold text-white mb-2 font-headline" style="">Health Plus</h3>
+<div class="flex items-baseline mb-8">
+<span class="text-4xl font-black text-white font-headline" style="">₹299</span>
+<span class="text-on-primary-container ml-2 font-body" style="">/month</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow font-body">
+<li class="flex items-center gap-3 text-sm text-white" style="">
+<span class="material-symbols-outlined text-white text-lg" data-icon="check_circle" style="">check_circle</span> Free 10-min Delivery
+                        </li>
+<li class="flex items-center gap-3 text-sm text-white" style="">
+<span class="material-symbols-outlined text-white text-lg" data-icon="check_circle" style="">check_circle</span> 20% Off All Medicines
+                        </li>
+<li class="flex items-center gap-3 text-sm text-white" style="">
+<span class="material-symbols-outlined text-white text-lg" data-icon="check_circle" style="">check_circle</span> Monthly Doctor Consultation
+                        </li>
+<li class="flex items-center gap-3 text-sm text-white" style="">
+<span class="material-symbols-outlined text-white text-lg" data-icon="check_circle" style="">check_circle</span> Early Access to Sales
+                        </li>
+</ul>
+<button class="w-full py-4 rounded-xl bg-white text-primary font-bold hover:shadow-lg transition-all font-headline" style="">Select Plan</button>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/15 flex flex-col">
+<h3 class="text-xl font-bold text-on-surface mb-2 font-headline" style="">Family Care</h3>
+<div class="flex items-baseline mb-8">
+<span class="text-4xl font-black text-primary font-headline" style="">₹699</span>
+<span class="text-outline ml-2 font-body" style="">/month</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow font-body">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> All Pro Benefits
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> Coverage for 4 members
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> Bi-monthly Lab Tests
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant" style="">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="">check_circle</span> Home Physiotherapy
+                        </li>
+</ul>
+<button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-surface-container-low transition-all font-headline" style="">Select Plan</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-6">
+<p class="text-center text-outline font-bold text-xs uppercase tracking-[0.2em] mb-12 font-label" style="">Trusted by Global Healthcare Leaders</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="text-2xl font-black text-primary font-headline" style="">Cetaphil</span>
+<span class="text-2xl font-black text-primary font-headline" style="">Dr. Morepen</span>
+<span class="text-2xl font-black text-primary font-headline" style="">PROTINEX</span>
+<span class="text-2xl font-black text-primary font-headline" style="">Dabur</span>
+<span class="text-2xl font-black text-primary font-headline" style="">Dettol</span>
+<span class="text-2xl font-black text-primary font-headline" style="">Himalaya</span>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#006d5b] text-white">
+<div class="max-w-screen-2xl mx-auto px-8 py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:col-span-5 gap-12 mb-16">
+<div class="col-span-2 lg:col-span-1">
+<div class="text-2xl font-black mb-6 font-headline" style="">MedoraQub</div>
+<p class="text-teal-50/70 text-sm leading-relaxed mb-6 font-body" style="">
+                    Reimagining pharmaceutical care with clinical precision and instant accessibility.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-100 opacity-80" data-icon="facebook" style="">social_leaderboard</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-100 opacity-80" data-icon="twitter" style="">retweet</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-100 opacity-80" data-icon="instagram" style="">retweet</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest font-headline" style="">Platform</h4>
+<ul class="space-y-4 font-body">
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Home</a></li>
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Shop</a></li>
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">AI Chatbot</a></li>
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Track order</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest font-headline" style="">Company</h4>
+<ul class="space-y-4 font-body">
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">About us</a></li>
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Parent Company</a></li>
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Contact us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest font-headline" style="">Support</h4>
+<ul class="space-y-4 font-body">
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Report Bug</a></li>
+<li class="" style=""><a class="text-teal-50/80 hover:text-white transition-transform duration-200 hover:translate-x-1 inline-block text-sm" href="#" style="">Legal issues</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest font-headline" style="">Stay Updated</h4>
+<div class="flex">
+<input class="bg-white/10 border-none rounded-l-lg px-4 py-2 w-full text-white placeholder-white/40 focus:ring-1 focus:ring-white font-body" placeholder="Your email" type="text"/>
+<button class="bg-white text-primary px-4 py-2 rounded-r-lg font-bold font-headline" style="">Go</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-teal-50/60 text-xs font-body" style="">© 2024 MedoraQub. All rights reserved. contact@medoraqub.com</p>
+<div class="flex gap-8 text-xs text-teal-50/60 font-body">
+<a class="hover:text-white" href="#" style="">Privacy Policy</a>
+<a class="hover:text-white" href="#" style="">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+```</body></html>
