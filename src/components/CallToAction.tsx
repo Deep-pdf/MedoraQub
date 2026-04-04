@@ -34,7 +34,6 @@ export default function CallToAction() {
         >
           <div className="absolute inset-0 bg-[#006D5B]/5 rounded-full blur-[100px] -z-10 translate-x-12 translate-y-12"></div>
           <div className="relative w-full max-w-2xl">
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[90%] aspect-square bg-primary-container rounded-full -z-10 opacity-10 lg:opacity-20"></div>
             <img alt="Doctor consultation" className="w-full h-auto rounded-2xl object-cover" src="/images/cta.png" />
           </div>
         </motion.div>
