@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export default function HowItWorks() {
   const stepsTop = [
@@ -15,7 +15,7 @@ export default function HowItWorks() {
     { num: 6, title: 'Home Care', desc: 'Professional nursing and physiotherapy provided at your doorstep.', img: '/images/step6.png' },
   ];
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -23,9 +23,9 @@ export default function HowItWorks() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8, y: 30 },
-    show: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 12 } }
+    show: { opacity: 1, scale: 1, y: 0, transition: { type: "spring" as const, stiffness: 100, damping: 12 } }
   };
 
   return (
