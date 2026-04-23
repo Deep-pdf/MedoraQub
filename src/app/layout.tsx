@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import { Nunito_Sans, Poppins } from 'next/font/google';
+import { Plus_Jakarta_Sans, Inter } from 'next/font/google';
 import './globals.css';
 
-const nunitoSans = Nunito_Sans({
-  variable: '--font-nunito-sans',
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: '--font-plus-jakarta-sans',
   subsets: ['latin'],
   display: 'swap',
 });
 
-const poppins = Poppins({
-  variable: '--font-poppins',
-  weight: ['300', '400', '500', '600', '700'],
+const inter = Inter({
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
@@ -31,7 +31,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${nunitoSans.variable} ${poppins.variable} antialiased overflow-x-hidden`}
+        className={`${plusJakartaSans.variable} ${inter.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>

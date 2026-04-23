@@ -7,8 +7,8 @@ export default function Header() {
         <div className="flex items-center justify-between gap-8">
           <div className="text-2xl font-black tracking-tighter text-[#005344] font-headline">MedoraQub</div>
           <nav className="hidden lg:flex items-center gap-6">
-            <a className="text-[#005344] border-b-2 border-[#005344] pb-1 font-bold font-headline text-sm tracking-tight" href="#">Home</a>
-            <a className="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#">Shop</a>
+            <a className="text-[#005344] border-b-2 border-[#005344] pb-1 font-bold font-headline text-sm tracking-tight" href="/">Home</a>
+            <a className="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="/store">Shop</a>
             <a className="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#">Doctors</a>
             <a className="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#">Brands</a>
             <a className="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#">Lab</a>

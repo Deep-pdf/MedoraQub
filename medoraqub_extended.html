@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head></head><body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MedoraQub - Health Products</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#eef2ee",
+                        "surface-container": "#ebefec",
+                        "on-secondary-container": "#4c6a62",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#9df3dc",
+                        "on-surface": "#181c1b",
+                        "tertiary": "#763527",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2d3130",
+                        "inverse-primary": "#81d6c0",
+                        "surface-container-highest": "#e0e3e0",
+                        "secondary-container": "#c8eade",
+                        "on-tertiary-container": "#ffd1c7",
+                        "surface": "#f7faf7",
+                        "on-primary-fixed-variant": "#005143",
+                        "tertiary-fixed": "#ffdad3",
+                        "tertiary-container": "#934c3c",
+                        "surface-container-high": "#e5e9e6",
+                        "background": "#f7faf7",
+                        "on-tertiary-fixed-variant": "#743425",
+                        "surface-container-low": "#f1f4f1",
+                        "tertiary-fixed-dim": "#ffb4a4",
+                        "secondary-fixed-dim": "#adcec3",
+                        "on-secondary-fixed-variant": "#2e4c44",
+                        "primary": "#005344",
+                        "primary-fixed-dim": "#81d6c0",
+                        "on-surface-variant": "#3e4945",
+                        "on-primary-container": "#96ebd5",
+                        "primary-container": "#006d5b",
+                        "surface-tint": "#006b59",
+                        "outline": "#6e7975",
+                        "surface-variant": "#e0e3e0",
+                        "surface-bright": "#f7faf7",
+                        "on-background": "#181c1b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#c8eade",
+                        "on-secondary-fixed": "#01201a",
+                        "on-primary-fixed": "#00201a",
+                        "outline-variant": "#bec9c4",
+                        "secondary": "#46645c",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#d7dbd8",
+                        "on-tertiary-fixed": "#3b0902"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<!-- TopNavBar -->
+<header class="top-0 sticky z-50 bg-[#ffffff]/70 backdrop-blur-md shadow-[0px_12px_32px_rgba(0,83,68,0.06)]">
+<div class="flex flex-col w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center justify-between gap-8">
+<div class="text-2xl font-black tracking-tighter text-[#005344] font-headline" style="">MedoraQub</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#">Home</a>
+<a class="text-[#005344] border-b-2 border-[#005344] pb-1 font-bold font-headline text-sm tracking-tight" href="#">Shop</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Doctors</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Brands</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Lab</a>
+<a class="text-slate-600 hover:text-[#006d5b] transition-all duration-300 font-headline text-sm font-semibold tracking-tight" href="#" style="">Baby Care</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm scale-95 active:scale-90 transition-transform font-headline" style="">Search Now</button>
+<div class="flex gap-4 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-low p-2 rounded-lg transition-all" data-icon="person" style="">person</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-surface-container-low p-2 rounded-lg transition-all" data-icon="shopping_cart" style="">shopping_cart</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-screen-2xl mx-auto px-4 md:px-6 py-8">
+<!-- Seasonal Promo Banner -->
+<section class="mb-12 relative overflow-hidden rounded-2xl h-64 md:h-80 shadow-lg group flex items-center bg-surface-container-low">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 to-transparent z-10"></div>
+<img alt="Professional medical healthcare products banner" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-105" data-alt="High-quality professional medical banner with healthcare products like medicine bottles and first-aid kit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAenIBfFGYRlYaDk9bLgt73jOX7cUNilSOeZdRSfXjicPvU6A4uLOvA-jaSANfpCRWbMqMVZGZPdRgkb9LLUVH-xdk1gazpRYOV65UXWsyYa9LGMftVLeJZ4QCtmie1blYGQd-AhgGmQ8omRe1sPgPI-wghW3TT-uOmRSM3T8iFllwi2cW-6dyDuPlP_OF42CkWsXiTRbcBtrn7-tNPeI7rlWqGetsEzKj83b7E85XUeVVmibGBxvM83eHQKjBsvb-SX5oxAqAuMPg" style=""/>
+<div class="relative z-20 p-8 md:p-12 max-w-xl text-white">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container text-xs font-bold rounded-full mb-4 tracking-wide uppercase shadow-sm" style="">Summer Wellness</span>
+<h1 class="font-headline text-3xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-4 text-white" style="">Revitalize Your Daily Routine</h1>
+<p class="font-body text-lg text-white/90 mb-6 max-w-md" style="">Up to 30% off premium vitamins and organic supplements.</p>
+<button class="bg-surface-container-lowest text-primary font-bold px-8 py-3 rounded-full hover:bg-surface-container-low transition-colors shadow-md active:scale-95 transform" style="">Shop the Sale</button>
+</div>
+</section>
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0 space-y-8 sticky top-24 h-fit">
+<div>
+<h3 class="font-headline text-lg font-bold text-on-surface mb-4 pb-2 border-b-2 border-surface-container" style="">Categories</h3>
+<ul class="space-y-3 font-body text-sm">
+<li class="" style="">
+<a class="flex items-center justify-between text-primary font-semibold hover:text-primary-container transition-colors p-2 rounded-lg bg-surface-container-lowest shadow-sm" href="#" style="">
+                                Vitamins &amp; Supplements
+                                <span class="material-symbols-outlined text-[18px]" style="">chevron_right</span>
+</a>
+</li>
+<li class="" style="">
+<a class="flex items-center justify-between text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface-container-lowest" href="#" style="">
+                                Personal Care
+                            </a>
+</li>
+<li class="" style="">
+<a class="flex items-center justify-between text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface-container-lowest" href="#" style="">
+                                OTC Medicine
+                            </a>
+</li>
+<li class="" style="">
+<a class="flex items-center justify-between text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface-container-lowest" href="#" style="">
+                                Baby Care
+                            </a>
+</li>
+<li class="" style="">
+<a class="flex items-center justify-between text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface-container-lowest" href="#" style="">
+                                Sports Nutrition
+                            </a>
+</li>
+<li class="" style="">
+<a class="flex items-center justify-between text-on-surface-variant hover:text-primary transition-colors p-2 rounded-lg hover:bg-surface-container-lowest" href="#" style="">
+                                First Aid
+                            </a>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold text-on-surface mb-4 pb-2 border-b-2 border-surface-container" style="">Health Goals</h3>
+<div class="space-y-2 font-body text-sm">
+<label class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-lowest cursor-pointer" style="">
+<input class="w-4 h-4 text-primary bg-surface-container-lowest border-outline rounded focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface-variant" style="">Immunity Support</span>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-lowest cursor-pointer" style="">
+<input class="w-4 h-4 text-primary bg-surface-container-lowest border-outline rounded focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface-variant" style="">Bone &amp; Joint Health</span>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-lowest cursor-pointer" style="">
+<input class="w-4 h-4 text-primary bg-surface-container-lowest border-outline rounded focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface-variant" style="">Digestive Health</span>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-lowest cursor-pointer" style="">
+<input class="w-4 h-4 text-primary bg-surface-container-lowest border-outline rounded focus:ring-primary" type="checkbox"/>
+<span class="text-on-surface-variant" style="">Energy &amp; Vitality</span>
+</label>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold text-on-surface mb-4 pb-2 border-b-2 border-surface-container" style="">Price Range</h3>
+<div class="px-2">
+<input class="w-full accent-primary h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer" max="100" min="0" type="range"/>
+<div class="flex justify-between text-xs text-outline mt-2 font-body">
+<span class="" style="">$0</span>
+<span class="" style="">$200+</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<div class="flex-1 space-y-16">
+<!-- Category Section 1: Vitamins & Supplements -->
+<section>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-surface" style="">Vitamins &amp; Supplements</h2>
+<div class="flex items-center gap-2">
+<span class="font-body text-sm text-on-surface-variant" style="">Sort by:</span>
+<select class="text-sm font-body bg-surface-container-lowest border-outline-variant/50 rounded-lg focus:ring-primary focus:border-primary py-1.5 pl-3 pr-8 shadow-sm">
+<option>Relevance</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Customer Rating</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">Best Seller</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Vitamin C Product" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="amber glass supplement bottle on white clinical background soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN2-A3peojeqQ6LkjY5nLGuawMQsRCBititMIMAZseMfbFlDxJ1JcVYEN82O_EwIbm88dyOdquz54bgDhs-lFrlU-nPqmq0kL8XTulmi2fIH_psJKVFwpa6Fbb-ef9uJosX3pt7G7nGX8uXS-Kbh1Jo6_Dk59ysRKNE2AXELou6GCQPcy24eWa6OgXKijZ_eXV5gbgQ0A5INEL6t3yP6_y3k75wvAyYuCQqWdZv16Bl4s69mirAdG-bsOJw5lVrbUuGu7WF1x798I" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.8</span>
+<span class="font-body text-xs text-outline" style="">(124)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Immunity</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Premium Vitamin C 1000mg with Rose Hips</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">60 Capsules</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$24.99</span>
+<span class="font-body text-xs text-outline line-through" style="">$29.99</span>
+</div>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Omega 3 Product" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="clear fish oil softgels spilling from white premium bottle clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvoVQhLRB_mppJ8qXWc7bZmZ00r-tbl5vvsh7PN0H11YHwTMndZrOMB2xR_ZSIg-qwpEvGCq8RARQFHjRxwju2hdI56L7yf3-fNeMilqdoS7lOesRHa732f5QAM2wv2-mTePN7N7O4arQbXOmkVufA3qXvqI8FGgw4UAa2jyEKPCrTmOvrvNjTun5Vkv0Q3tCx0SoIQB44AhIHqxEM7BjmXp3DsstxmpE4oMwpk4udHobEIHDZIq3-Dz3FmcFJFSbIqcIsT9gRRz8" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.6</span>
+<span class="font-body text-xs text-outline" style="">(89)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Heart Health</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Wild Caught Alaskan Omega-3 Fish Oil</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">120 Softgels</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$32.50</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Reminders Card injected into feed -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Multivitamin Product" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="sleek white minimalist supplement container on marble surface soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcIIOpKeiqUinV9cXRATnaPrVdU1lpnZz6leofg5teKvmBrYNHC2j82x8ikFKOnrFc2LZDhvE_IT5-C1x6VreyG0yfNCDwfNc60UwC6gnvwoTZxaEbu2m9CsB8nDnvkMHt97zN-XSEY3v1iJ0tuzGSOcil6qL0wipvHmyknjftaJYY4WKLmQe1UD5dt0Y8YtheeJyceaT9xHufZWSYefuRyzPNhusv82_DQw46o7N6qD7CqLmLgRASWTvmQnWccqpTN3vc-2ZL5ZU" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.9</span>
+<span class="font-body text-xs text-outline" style="">(210)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Daily Wellness</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Complete Daily Multivitamin for Adults</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">90 Tablets</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$18.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-secondary-container/50 rounded-2xl p-6 flex flex-col justify-center border border-secondary/20 shadow-sm col-span-1 sm:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary bg-surface-container-lowest p-2 rounded-full shadow-sm">lightbulb</span>
+<h3 class="font-headline font-bold text-on-secondary-container">Health Tip</h3>
+</div>
+<p class="font-body text-sm text-on-secondary-container/80 mb-4">Don't forget your daily Vitamin D! It's crucial for bone health and immune function, especially during winter months.</p>
+<a class="text-secondary font-bold text-sm hover:underline font-headline flex items-center gap-1" href="#">Shop Vitamin D <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</article></div>
+</section>
+<!-- Banner Injection -->
+<section class="w-full bg-gradient-to-r from-tertiary-container to-tertiary rounded-2xl shadow-lg p-8 md:p-10 flex flex-col md:flex-row items-center justify-between text-white relative overflow-hidden group">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-700"></div>
+<div class="z-10 text-center md:text-left mb-6 md:mb-0">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold mb-2 tracking-tight" style="">Winter Wellness Sale</h2>
+<p class="font-body text-lg text-white/90" style="">Up to <span class="font-bold text-2xl text-[#ffd1c7]" style="">40% Off</span> select cold &amp; flu essentials.</p>
+</div>
+<button class="z-10 bg-white text-tertiary font-bold px-8 py-3 rounded-full hover:bg-surface-container-lowest transition-colors shadow-md active:scale-95 transform whitespace-nowrap" style="">Shop Deals Now</button>
+</section>
+<!-- Category Section 2: OTC Medicine (Masonry Style) -->
+<section>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-surface" style="">OTC Medicine</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">Fast Acting</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Pain Relief" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="white pill bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdvOHpa_Q2r_1XLRN6fB0ZgXroHTlCIV48pRUeWKEO9IJpSW7AD2qwkeI6jgWcCEihYdNo0OezIz33BiXmPJllhI-9bB9t5o6Baojj58lUgflLul6jJR5DgZNnekdyzDWzGhuA3CIkDKF0YuBIVA1pJP0M1pfZhXIyRi0E2sdWpoaNedPheqNvkBlC8KXQ6N6-1Ifmn8xAh5C0vzqGOunZHQBLyma3KKvP4CZuLX_qMaqlwgqB-uu8T3s38r4iW_rElsgwMBlU40g" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Pain Relief</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Extra Strength Acetaminophen 500mg</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">100 Caplets</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$11.49</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product 2 (Taller) -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Allergy Meds" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="allergy medicine box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiGxNuAju4_YE1iNjYWuMweNTqGgVsYXHhAJxY772z6oTrSjOB7WZ5AVRxYpeQ6QxfQMWm_-_f44awe3ztIyL35D9jRWx9vA-qxEo7RnjofTEuSuZNUfmngTO0HXZYMrXQUKx2ftemX5PI9VYS1h5IYDPYOknd0UVJNsiC94z1g_T-DtUTSxy4zFvNNjrFkzgTGjyNoeqa8CjBYJCwxxPwMuVrKdvHqqLXhV2SfzKFnFg7KgSebBwjWeAxA00xptbGtz0jmQEoltU" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.7</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Allergy</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">24-Hour Non-Drowsy Allergy Relief</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">Loratadine 10mg, 30 Tablets</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$16.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article><article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Headache Relief" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="box of headache relief pills" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdvOHpa_Q2r_1XLRN6fB0ZgXroHTlCIV48pRUeWKEO9IJpSW7AD2qwkeI6jgWcCEihYdNo0OezIz33BiXmPJllhI-9bB9t5o6Baojj58lUgflLul6jJR5DgZNnekdyzDWzGhuA3CIkDKF0YuBIVA1pJP0M1pfZhXIyRi0E2sdWpoaNedPheqNvkBlC8KXQ6N6-1Ifmn8xAh5C0vzqGOunZHQBLyma3KKvP4CZuLX_qMaqlwgqB-uu8T3s38r4iW_rElsgwMBlU40g" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.9</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Pain Relief</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Double Action Headache Relief</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">50 Tablets</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$14.25</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Reminders Card injected into masonry feed -->
+<!-- Product 3 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">New Arrival</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Cold Syrup" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="cough syrup bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyW4BaCW0Q_xpFMsPxqDPGqDIhDV1oHmRfuYagnHFNk8X-qIWCSCl8lMLULhZP3T-Bz8ic0zQl8z0IXfI5GJ6Ik1PrE3p7p7d0UYlvOStnm4O-TO9lgILSfaUDeHjWXmw6cVdV57iDsn_fNLjaA8gwSe8vMwgCIRgmQR_o_59tgZBaB8Fg5l20Tmq4iCGAcf_smj3Uxcaq0oEsm6H25T8-S6PzNpb69LtDIuTM4oEqzmYYi-wf9Bvb10zJSRrHs5fxcXh2qCZGg34" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Cold &amp; Flu</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Multi-Symptom Nighttime Cold Relief</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">8 Fl Oz</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$9.50</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product 4 -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Antacid" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="antacid tablets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlpziAnXG6An8vmoE402SKUHFq7XEG_p9S5-umM62O7GKBnR_o_6ikTrJfw-sbEdl7BGB5ZwhzMGmEG8A15LaCnZFhrju9wjgoTd1ZcjScb3l22dukIPvUtUdEqvNx46RbqGljZzUXq8izBRTUv8jQ5ubKN88AhIKo4FS46rE2r4ZlPQHJNPmU1vF6Hp3lQYfG1_5EQmPIBiGqnIYduQVelI3o6U3PaYyBuhoqYsZ-y_VjRcCrC6VPMtXOc4vVwOoxqzKjzlKX1RM" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.5</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Digestive</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Maximum Strength Antacid Chews</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">Mixed Berry, 72 Count</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$12.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Sleep Aid" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="blue sleep medicine bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyW4BaCW0Q_xpFMsPxqDPGqDIhDV1oHmRfuYagnHFNk8X-qIWCSCl8lMLULhZP3T-Bz8ic0zQl8z0IXfI5GJ6Ik1PrE3p7p7d0UYlvOStnm4O-TO9lgILSfaUDeHjWXmw6cVdV57iDsn_fNLjaA8gwSe8vMwgCIRgmQR_o_59tgZBaB8Fg5l20Tmq4iCGAcf_smj3Uxcaq0oEsm6H25T8-S6PzNpb69LtDIuTM4oEqzmYYi-wf9Bvb10zJSRrHs5fxcXh2qCZGg34" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.8</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Sleep Aid</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Deep Sleep Melatonin 5mg</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">60 Gummies</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$13.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article><article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Fiber Supplement" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="orange fiber supplement jar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN2-A3peojeqQ6LkjY5nLGuawMQsRCBititMIMAZseMfbFlDxJ1JcVYEN82O_EwIbm88dyOdquz54bgDhs-lFrlU-nPqmq0kL8XTulmi2fIH_psJKVFwpa6Fbb-ef9uJosX3pt7G7nGX8uXS-Kbh1Jo6_Dk59ysRKNE2AXELou6GCQPcy24eWa6OgXKijZ_eXV5gbgQ0A5INEL6t3yP6_y3k75wvAyYuCQqWdZv16Bl4s69mirAdG-bsOJw5lVrbUuGu7WF1x798I" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.4</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Digestive</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Daily Fiber Powder</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">72 Servings</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$22.50</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article><article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">Essential</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="First Aid Cream" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="tube of antiseptic cream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9t1U-P1b3T__JZCYoM_zcdfLVcGm0tAbiZ0UQNX23z41P-skxsJu4v2cg4_a3tT2c4etmWdtoMZN0NSBbVcg4wRLdewe8CM7femW1DC1W3-WnSpbp-cd0wK3oMBsvMJyXyu5Ob353DhGK4cot37DuoAtvx3dI5ty9dA79R5YTfA5OnChxXln-jPFj7q1RM2fQ7LAjZRRx8TJEt9FTK3lEAlQZlmajahX3Uk8ew4nz30W0ycJDNsMZY6swtie0FF5iCOp2gmoBnE" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.9</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">First Aid</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight" style="">Triple Antibiotic Ointment</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">1 oz Tube</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$8.75</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article></div>
+</section>
+<!-- Promo Poster 2 -->
+<section class="mb-12 relative overflow-hidden rounded-2xl h-48 shadow-lg group flex items-center bg-primary-container">
+<div class="absolute inset-0 bg-gradient-to-r from-[#006d5b] to-[#005344] z-10"></div>
+<div class="absolute right-0 top-0 h-full w-1/2 opacity-20 z-10 pointer-events-none" style="background-image: radial-gradient(#9df3dc 2px, transparent 2px); background-size: 20px 20px;"></div>
+<div class="relative z-20 w-full px-8 md:px-16 flex flex-col md:flex-row items-center justify-between text-white">
+<div class="text-center md:text-left mb-6 md:mb-0">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tighter leading-tight mb-2 text-white" style="">Buy 1 Get 1 50% Off</h2>
+<p class="font-body text-lg text-white/90" style="">Mix &amp; match on all store brand supplements.</p>
+</div>
+<button class="bg-[#9df3dc] text-[#005344] font-bold px-8 py-3 rounded-full hover:bg-white transition-colors shadow-md active:scale-95 transform whitespace-nowrap" style="">View Eligible Items</button>
+</div>
+</section>
+<!-- Category Section 3: Personal Care -->
+<section>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-surface" style="">Personal Care</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">New</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Personal Care Product 1" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="amber glass supplement bottle on white clinical background soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7lZDbix-rw4Z6jUNF0tvwx10jP98S2EojckeA_lPWUAWHRgvmshUeq0hQT3riFmtpPl23MXdWIVgG1MEaiG-pR0s5L1994NoQ-6GD_7JqAP8ccWsCfhmvekL0OSo7drFNS1nk87AttvgksuD8ydiCTtZXomqElqVdmFo7Fw9L5lx4tRKSNEiy8D9pmBMwz27F2drNQT1kde6283_oOMPlG7qi8NHAM4l6yqzXnexKa8oQ7Dw1ER_SCCjjCUpergpywilbiVasoWM" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.7</span>
+<span class="font-body text-xs text-outline" style="">(88)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Skincare</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Hydrating Facial Cleanser with Ceramides</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">250 ml</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$15.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Personal Care Product 2" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="clear fish oil softgels spilling from white premium bottle clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3niYCVAKu6TJEedpGC3OHSyz1OcGLamSWeB4VIN9JebT-hLaSbJzJn3EI3I3qOB-2gZMI-_vaqgZBSlYgJEiQfdOX_t6qrlMtuhGCAa3pCpjECM0bYephqZO14o211AXoY13arB-Hj-u70ioPcWNTg9J8di4aV6dXIeFwd-AriObjHCBzJEtrjAbKHeDEduz66Cp7PRfT-wjFXxf8OpisnY-T01aXlX4zYlO2lZXfzWpIZ-0SZgR4yb6OqA0Iim63ctpWDKzFSgA" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.5</span>
+<span class="font-body text-xs text-outline" style="">(112)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Body Care</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Organic Lavender Body Wash</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">500 ml</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$12.50</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">Best Seller</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Personal Care Product 3" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="sleek white minimalist supplement container on marble surface soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9t1U-P1b3T__JZCYoM_zcdfLVcGm0tAbiZ0UQNX23z41P-skxsJu4v2cg4_a3tT2c4etmWdtoMZN0NSBbVcg4wRLdewe8CM7femW1DC1W3-WnSpbp-cd0wK3oMBsvMJyXyu5Ob353DhGK4cot37DuoAtvx3dI5ty9dA79R5YTfA5OnChxXln-jPFj7q1RM2fQ7LAjZRRx8TJEt9FTK3lEAlQZlmajahX3Uk8ew4nz30W0ycJDNsMZY6swtie0FF5iCOp2gmoBnE" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.9</span>
+<span class="font-body text-xs text-outline" style="">(340)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Soothing</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Pure Aloe Vera Healing Gel</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">200 ml</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$8.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Reminders Card -->
+<article class="bg-[#ffdad3]/50 rounded-2xl p-6 flex flex-col justify-center border border-[#93000a]/10 shadow-sm">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[#93000a] bg-white p-2 rounded-full shadow-sm" style="">water_drop</span>
+<h3 class="font-headline font-bold text-[#93000a]" style="">Skincare Tip</h3>
+</div>
+<p class="font-body text-sm text-[#93000a]/80 mb-4" style="">Hydration starts from within, but locking it in with a good moisturizer right after a shower is key!</p>
+<a class="text-[#93000a] font-bold text-sm hover:underline font-headline flex items-center gap-1" href="#" style="">Shop Moisturizers <span class="material-symbols-outlined text-[16px]" style="">arrow_forward</span></a>
+</article>
+</div>
+</section>
+<!-- Category Section 4: Baby Care -->
+<section>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-surface" style="">Baby Care</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-xs font-bold px-2 py-1 rounded-md z-10 shadow-sm" style="">Best Seller</div>
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Baby Care Product 1" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="amber glass supplement bottle on white clinical background soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJF7U5sqoqFBXU6jY-AYPEuAvU0kYp3H7f88g3ekCZPYCnId4cBXohIZKkbiZZyZlFJwp2I3hjeHKW9wLNKmt7IxbbHmCS56lU24s-d2A6un7MYarfAv7hCBm6mwhkLsiNDXL6c0qGNx0OupTtUgeHEWtu9OSvTLKpU1B-qKb6xY5az_oetKCpyv_yZrYj7a687oQxrdbthvHEYhXfTneemwSe6CnqvJx1uHrneIoeL-MIqzd7HyaQQmlQyHYJT9cXGBl4wDcvreY" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.9</span>
+<span class="font-body text-xs text-outline" style="">(450)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Bath</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Tear-Free Gentle Baby Shampoo</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">400 ml</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$9.99</span>
+</div>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Baby Care Product 2" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="clear fish oil softgels spilling from white premium bottle clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmLQSkCCPGmOAKqPgdAD9zNPHpo5FkLBi8HDELDVaqMcUhyiPkK9pJVJ1dCMeWxjvJ-eWqYzOGLoEvDIVL8Uymw9pTqPRpeBTmoV2J52KCVpGE9Yd3uX7d46vojwrndcW3GN4VDb2I8Un1TfxMM7AvmebOYpr442PlRhBoymqo8ae-O8p9_cVXS1pOUBmB8JAZ5StFsukyNzWix5pqX2nORaSoe6hPoz3ijmUH52EfLJT2bMrTSPXiwA_qMGI7XXuk9x2oR0CkkI4" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.8</span>
+<span class="font-body text-xs text-outline" style="">(312)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Skin Protect</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Maximum Strength Diaper Rash Cream</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">113 g</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$7.50</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col relative group">
+<button aria-label="Add to wishlist" class="absolute top-3 right-3 text-outline hover:text-tertiary transition-colors z-10 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm" style="">
+<span class="material-symbols-outlined text-[20px]" style="">favorite</span>
+</button>
+<div class="h-48 bg-surface-container-low flex items-center justify-center p-4 overflow-hidden relative">
+<img alt="Baby Care Product 3" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="sleek white minimalist supplement container on marble surface soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQy4O-biaExGIYQ9kQzufL_g-moHOHXv5ntccnNZoidaIgwonkE4bFbf-aIlQYzI3unradN6Gk8OPBAVaiPA0I26prVPQ71RlhOFlkxu-mlWX61HTD1sgachB9dCBw_yFnB219xrLS7xk4OoVakC-fpjgoOa3D6NKEh16e8pk2TTFw61_DURAvLz7LoPGuuoZDSfqD0r21JfdIKH7lfI-GuzhjvGKNDjKnDVVvQZ0FG5U7ULnQnuRyUxbQOMs9HzvK6MZJ7m6VRSg" style=""/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[#f59e0b] text-[16px] fill-current" style='font-variation-settings: "FILL" 1;'>star</span>
+<span class="font-label text-sm font-semibold text-on-surface" style="">4.6</span>
+<span class="font-body text-xs text-outline" style="">(189)</span>
+</div>
+<span class="font-label text-xs text-primary mb-1 uppercase tracking-wider" style="">Skin Comfort</span>
+<h3 class="font-headline text-base font-bold text-on-surface mb-1 leading-tight line-clamp-2" style="">Talc-Free Organic Baby Powder</h3>
+<p class="font-body text-xs text-on-surface-variant mb-4" style="">250 g</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline text-lg font-extrabold text-on-surface" style="">$6.99</span>
+<button aria-label="Add to cart" class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm active:scale-95 transform" style="">
+<span class="material-symbols-outlined" style="">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Reminders Card -->
+<article class="bg-[#c8eade]/50 rounded-2xl p-6 flex flex-col justify-center border border-[#005344]/10 shadow-sm">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[#005344] bg-white p-2 rounded-full shadow-sm" style="">child_care</span>
+<h3 class="font-headline font-bold text-[#005344]" style="">Parenting Tip</h3>
+</div>
+<p class="font-body text-sm text-[#005344]/80 mb-4" style="">Keep a travel-sized diaper rash cream in your go-bag for emergencies on the move.</p>
+</article>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="full-width rounded-none mt-20 border-t border-teal-800 dark:border-emerald-900 flat bg-teal-900 dark:bg-emerald-950">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<span class="text-xl font-bold text-white mb-4 block font-plus-jakarta-sans" style="">Emerald Clinical</span>
+<p class="font-plus-jakarta-sans text-sm leading-relaxed text-teal-200/80 mb-6 max-w-xs" style="">The Clinical Concierge. Redefining digital healthcare with precision and elegance.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 font-plus-jakarta-sans tracking-tight" style="">Explore</h4>
+<ul class="space-y-3 font-plus-jakarta-sans text-sm leading-relaxed cursor-pointer opacity-90 hover:opacity-100">
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">About Us</a></li>
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">Contact Us</a></li>
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 font-plus-jakarta-sans tracking-tight" style="">Services</h4>
+<ul class="space-y-3 font-plus-jakarta-sans text-sm leading-relaxed cursor-pointer opacity-90 hover:opacity-100">
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">Terms &amp; Conditions</a></li>
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">Return Policy</a></li>
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">Doctor Consultations</a></li>
+<li class="" style=""><a class="text-teal-200/80 hover:text-white hover:translate-x-1 transition-transform duration-200 inline-block" href="#" style="">Lab Tests</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="text-white font-bold mb-4 font-plus-jakarta-sans tracking-tight" style="">Stay Updated</h4>
+<p class="font-plus-jakarta-sans text-sm leading-relaxed text-teal-200/80 mb-4" style="">Subscribe for wellness tips and exclusive offers.</p>
+<div class="flex">
+<input class="bg-emerald-900/50 border-teal-800 text-white placeholder:text-teal-400/50 rounded-l-md px-4 py-2 w-full focus:outline-none focus:border-teal-400 text-sm" placeholder="Email address" type="email"/>
+<button class="bg-teal-700 hover:bg-teal-600 text-white px-4 py-2 rounded-r-md transition-colors" style="">
+<span class="material-symbols-outlined text-[20px]" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</footer></body></html>
